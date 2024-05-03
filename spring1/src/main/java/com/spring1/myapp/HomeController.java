@@ -16,6 +16,8 @@ public class HomeController {
 	
 	private static final Logger log = LoggerFactory.getLogger(HomeController.class);
 	//localhost:8091/spring1/ => /WEB-INF/views/home.jsp
+
+	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		log.info("Welcome home~! The Client locale is {}.", locale);
